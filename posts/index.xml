@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on 辛二&#39;s Blog</title>
+		<link>https://xxm404.github.io/posts/</link>
+		<description>Recent content in Posts on 辛二&#39;s Blog</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>zh-hans</language>
+		<lastBuildDate>Fri, 12 Jul 2019 12:16:43 +0800</lastBuildDate>
+		<atom:link href="https://xxm404.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>First Post</title>
+			<link>https://xxm404.github.io/posts/first-post/</link>
+			<pubDate>Fri, 12 Jul 2019 12:16:43 +0800</pubDate>
+			
+			<guid>https://xxm404.github.io/posts/first-post/</guid>
+			<description>Test post 测试 测试</description>
+			<content type="html"><![CDATA[
+
+<h2 id="test-post">Test post</h2>
+
+<ol>
+<li>测试</li>
+<li>测试</li>
+</ol>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

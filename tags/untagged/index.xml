@@ -17,7 +17,7 @@
       <pubDate>Fri, 12 Jul 2019 12:16:43 +0800</pubDate>
       
       <guid>https://xxm404.github.io/posts/first-post/</guid>
-      <description>Test post 测试 测试</description>
+      <description>Test post 测试 测试 &amp;lt;?php $test = array();</description>
     </item>
     
   </channel>

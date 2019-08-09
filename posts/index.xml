@@ -15,7 +15,7 @@
 			<pubDate>Fri, 12 Jul 2019 12:16:43 +0800</pubDate>
 			
 			<guid>https://xxm404.github.io/posts/first-post/</guid>
-			<description>Test post 测试 测试</description>
+			<description>Test post 测试 测试 &amp;lt;?php $test = array();</description>
 			<content type="html"><![CDATA[
 
 <h2 id="test-post">Test post</h2>
@@ -24,7 +24,9 @@
 <li>测试</li>
 <li>测试</li>
 </ol>
-]]></content>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="nv">$test</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+</code></pre></div>]]></content>
 		</item>
 		
 	</channel>

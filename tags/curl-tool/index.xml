@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curl Tool on 辛二&#39;s Blog</title>
+    <link>https://xxm404.github.io/tags/curl-tool/</link>
+    <description>Recent content in Curl Tool on 辛二&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <lastBuildDate>Sun, 16 Feb 2020 17:51:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://xxm404.github.io/tags/curl-tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CurlLatency</title>
+      <link>https://xxm404.github.io/posts/curllatency/</link>
+      <pubDate>Sun, 16 Feb 2020 17:51:11 +0800</pubDate>
+      
+      <guid>https://xxm404.github.io/posts/curllatency/</guid>
+      <description>Curl 分析请求耗时 $ curl -w &amp;quot;@curl-latency.txt&amp;quot; -o /dev/null -s http://target-server # The contents of curl-latency.txt time_namelookup: %{time_namelookup}\n # DNS 域名解析消耗时间 time_connect: %{time_connect}\n # TCP 连接建立时间 time_appconnect: %{time_appconnect}\n # SSL/SSH 完成连接和握手消耗时间 time_pretransfer: %{time_pretransfer}\n # 从请求开始到响应开始</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,8 +6,44 @@
 		<description>Recent content in Posts on 辛二&#39;s Blog</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>zh-hans</language>
-		<lastBuildDate>Fri, 09 Aug 2019 16:52:40 +0800</lastBuildDate>
+		<lastBuildDate>Sun, 16 Feb 2020 17:51:11 +0800</lastBuildDate>
 		<atom:link href="https://xxm404.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>CurlLatency</title>
+			<link>https://xxm404.github.io/posts/curllatency/</link>
+			<pubDate>Sun, 16 Feb 2020 17:51:11 +0800</pubDate>
+			
+			<guid>https://xxm404.github.io/posts/curllatency/</guid>
+			<description>Curl 分析请求耗时 $ curl -w &amp;quot;@curl-latency.txt&amp;quot; -o /dev/null -s http://target-server # The contents of curl-latency.txt time_namelookup: %{time_namelookup}\n # DNS 域名解析消耗时间 time_connect: %{time_connect}\n # TCP 连接建立时间 time_appconnect: %{time_appconnect}\n # SSL/SSH 完成连接和握手消耗时间 time_pretransfer: %{time_pretransfer}\n # 从请求开始到响应开始</description>
+			<content type="html"><![CDATA[
+
+<h2 id="curl-分析请求耗时">Curl 分析请求耗时</h2>
+
+<p><code>$ curl -w &quot;@curl-latency.txt&quot; -o /dev/null -s http://target-server</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># The contents of curl-latency.txt</span>
+    time_namelookup:  %<span class="o">{</span>time_namelookup<span class="o">}</span><span class="se">\n</span>		<span class="c1"># DNS 域名解析消耗时间</span>
+       time_connect:  %<span class="o">{</span>time_connect<span class="o">}</span><span class="se">\n</span>				<span class="c1"># TCP 连接建立时间</span>
+    time_appconnect:  %<span class="o">{</span>time_appconnect<span class="o">}</span><span class="se">\n</span>		<span class="c1"># SSL/SSH 完成连接和握手消耗时间</span>
+   time_pretransfer:  %<span class="o">{</span>time_pretransfer<span class="o">}</span><span class="se">\n</span>		<span class="c1"># 从请求开始到响应开始传输的时间</span>
+      time_redirect:  %<span class="o">{</span>time_redirect<span class="o">}</span><span class="se">\n</span>			# 
+ time_starttransfer:  %<span class="o">{</span>time_starttransfer<span class="o">}</span><span class="se">\n</span>	<span class="c1"># 从请求开始到第一个字节将要传输的时间</span>
+                    ----------<span class="se">\n</span>
+         time_total:  %<span class="o">{</span>time_total<span class="o">}</span><span class="se">\n</span>					<span class="c1"># 总耗时</span>
+<span class="c1"># TCP 连接时间 	pretransfter - namelookup</span>
+<span class="c1"># Server handle 时间 starttransfter - pretransfer</span>
+<span class="c1"># 内容传输时间 total - starttransfer</span></code></pre></div>
+<p>Simple output:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -w <span class="s2">&#34;@curl-latency.txt&#34;</span> -o /dev/null -s http://192.0.2.1/api-endpoint
+    time_namelookup:  <span class="m">0</span>.000035
+       time_connect:  <span class="m">0</span>.000364
+    time_appconnect:  <span class="m">0</span>.000000
+   time_pretransfer:  <span class="m">0</span>.000401
+      time_redirect:  <span class="m">0</span>.000000
+ time_starttransfer:  <span class="m">0</span>.001701
+                    ----------
+         time_total:  <span class="m">0</span>.001727</code></pre></div>]]></content>
+		</item>
 		
 		<item>
 			<title>名词解释</title>

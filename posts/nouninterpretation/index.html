@@ -12,7 +12,7 @@
 
 <meta itemprop="datePublished" content="2019-08-09T16:52:40&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-09T18:47:29&#43;08:00" />
-<meta itemprop="wordCount" content="321">
+<meta itemprop="wordCount" content="711">
 
 
 
@@ -106,13 +106,44 @@ ex: 收集嵌入式系统的日志，日志产生于嵌入式设备，则 EventT
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">执行相应操作系统的系统时间
 ex: 收集嵌入式系统的日志，日志产生于嵌入式设备，则 ProcessingTime 为日志传输到收集系统时，此手机服务的系统时间</code></pre></div>
+<ul>
+<li>ETL</li>
+</ul>
+<div class="highlight"><pre class="chroma">  Extract-Transform-Load 的缩写，用来描述将数据从来源端经过萃取、转置、加载至目的端的过程。</pre></div>
+<ul>
+<li>CDC</li>
+</ul>
+<div class="highlight"><pre class="chroma">  Change data capture 修改改数据捕获，</pre></div>
+<h3 id="devops">DEVOPS<a href="#devops" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+
+<ul>
+<li>蓝绿部署（Blue/Green Deployment）</li>
+</ul>
+<div class="highlight"><pre class="chroma">  在不停止老版本（v1）的情况下，部署新版本（v2）进行测试。确认新版本无误后，切到新版本。蓝绿部署需要 double 的机器资源，流量切换为全量切换。</pre></div>
+<ul>
+<li>灰度部署/金丝雀部署（Canary Deployment）</li>
+</ul>
+<div class="highlight"><pre class="chroma">  在黑与白之间平滑过渡的一种发布方式，A/B Test 就是一种灰度发布，流量切换由小到大，最终完全切换。</pre></div>
+<ul>
+<li>SLA (Service Level Agreement)</li>
+</ul>
+<div class="highlight"><pre class="chroma">  The agreement you make with your clients or users
+  服务级别协议，是服务提供商和客户之间关于可衡量指标（如停机时间，响应能力和责任）的协议</pre></div>
+<ul>
+<li>SLO (Service Level Objectives)</li>
+</ul>
+<div class="highlight"><pre class="chroma">  服务级别目标，是 SLA 中有关特定指标（如停机时间或响应时间）的协议，SLOs 就是提供商向客户做出的承诺</pre></div>
+<ul>
+<li>SLI (Service Level Indicators)</li>
+</ul>
+<div class="highlight"><pre class="chroma">  服务级别指标，是测量 SLO 合规性的指标，如果 SLA 指定系统在 99.95% 时间可用，则 SLO 的可用时间就是 99.95%，SLI 将满足或超过该承诺</pre></div>
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://xxm404.github.io/tags/wiki">wiki</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>321 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>711 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-08-09 16:52</p>
 			</footer>
 		</article>
@@ -126,6 +157,7 @@ ex: 收集嵌入式系统的日志，日志产生于嵌入式设备，则 Proces
 <ul>
 <li><a href="#common">common</a></li>
 <li><a href="#大数据处理-实时计算">大数据处理 &amp; 实时计算</a></li>
+<li><a href="#devops">DEVOPS</a></li>
 </ul></li>
 </ul></li>
 </ul>

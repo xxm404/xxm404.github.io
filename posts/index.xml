@@ -26,14 +26,14 @@
 
 <p>更新系统软件源<code>sudo apt-get update</code>，执行<code>sudo apt-get install python3.6 -y</code> 安装成功后，执行<code>python3 -V</code>查看</p>
 
-<p><img src="/Users/xinmian/Library/Application Support/typora-user-images/image-20201017175357727.png" alt="image-20201017175357727" /></p>
+<p><img src="https://i.loli.net/2020/10/17/h9erQ4qmPfFKptT.png" alt="image.png" /></p>
 
 <p>发现依然是<code>python3.4</code>，此处的<code>python3</code>是一个软链，删除这个软链，重新创建软链到<code>python3.6</code></p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">rm /usr/bin/python3
 ln -s /usr/bin/python3.6m /usr/bin/python3</code></pre></div>
 <p>此时执行<code>python3 -V</code></p>
 
-<p><img src="/Users/xinmian/Library/Application Support/typora-user-images/image-20201017175419399.png" alt="image-20201017175419399" /></p>
+<p><img src="https://i.loli.net/2020/10/17/DFW68yMcx73A5PU.png" alt="image.png" /></p>
 
 <p>这时执行<code>pip3 -V</code>报错</p>
 <div class="highlight"><pre class="chroma">Traceback (most recent call last):
@@ -52,7 +52,7 @@ AttributeError: module &#39;importlib._bootstrap&#39; has no attribute &#39;Sour
 
 <p>执行成功后，切换回原用户，执行<code>pip3 -V</code></p>
 
-<p><img src="/Users/xinmian/Library/Application Support/typora-user-images/image-20201017180033485.png" alt="image-20201017180033485" /></p>
+<p><img src="https://i.loli.net/2020/10/17/WFQouPmfaqzhl95.png" alt="image.png" /></p>
 
 <p>搞定！</p>
 
